@@ -1,0 +1,208 @@
+16/10/21 19:36:43 INFO CoarseGrainedExecutorBackend: Registered signal handlers for [TERM, HUP, INT]
+16/10/21 19:36:43 DEBUG MutableMetricsFactory: field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)], about=, type=DEFAULT, always=false, sampleName=Ops)
+16/10/21 19:36:43 DEBUG MutableMetricsFactory: field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)], about=, type=DEFAULT, always=false, sampleName=Ops)
+16/10/21 19:36:43 DEBUG MutableMetricsFactory: field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[GetGroups], about=, type=DEFAULT, always=false, sampleName=Ops)
+16/10/21 19:36:43 DEBUG MetricsSystemImpl: UgiMetrics, User and group related metrics
+16/10/21 19:36:43 DEBUG Groups:  Creating new Groups object
+16/10/21 19:36:43 DEBUG NativeCodeLoader: Trying to load the custom-built native-hadoop library...
+16/10/21 19:36:43 DEBUG NativeCodeLoader: Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+16/10/21 19:36:43 DEBUG NativeCodeLoader: java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+16/10/21 19:36:43 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/10/21 19:36:43 DEBUG JniBasedUnixGroupsMappingWithFallback: Falling back to shell based
+16/10/21 19:36:43 DEBUG JniBasedUnixGroupsMappingWithFallback: Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+16/10/21 19:36:43 DEBUG Shell: setsid exited with exit code 0
+16/10/21 19:36:43 DEBUG Groups: Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+16/10/21 19:36:43 DEBUG SparkHadoopUtil: running as user: platuser
+16/10/21 19:36:44 DEBUG UserGroupInformation: hadoop login
+16/10/21 19:36:44 DEBUG UserGroupInformation: hadoop login commit
+16/10/21 19:36:44 DEBUG UserGroupInformation: using kerberos user:platuser/10.2.177.208@OTOCYON.COM
+16/10/21 19:36:44 DEBUG UserGroupInformation: UGI loginUser:platuser/10.2.177.208@OTOCYON.COM (auth:KERBEROS)
+16/10/21 19:36:44 DEBUG UserGroupInformation: PrivilegedAction as:platuser (auth:SIMPLE) from:org.apache.spark.deploy.SparkHadoopUtil.runAsSparkUser(SparkHadoopUtil.scala:74)
+16/10/21 19:36:44 DEBUG UserGroupInformation: Found tgt Ticket (hex) = 
+0000: 61 82 01 78 30 82 01 74   A0 03 02 01 05 A1 0D 1B  a..x0..t........
+0010: 0B 4F 54 4F 43 59 4F 4E   2E 43 4F 4D A2 20 30 1E  .OTOCYON.COM. 0.
+0020: A0 03 02 01 02 A1 17 30   15 1B 06 6B 72 62 74 67  .......0...krbtg
+0030: 74 1B 0B 4F 54 4F 43 59   4F 4E 2E 43 4F 4D A3 82  t..OTOCYON.COM..
+0040: 01 3A 30 82 01 36 A0 03   02 01 12 A1 03 02 01 01  .:0..6..........
+0050: A2 82 01 28 04 82 01 24   93 2B 82 4F 17 6D C4 A1  ...(...$.+.O.m..
+0060: C2 22 23 56 2C 3E B2 45   BD 2E 73 CE 37 36 4A 44  ."#V,>.E..s.76JD
+0070: EF C6 67 AE FA 81 E0 CA   85 6C AD 6E 68 98 48 8E  ..g......l.nh.H.
+0080: 8C 31 22 4F F0 B6 17 16   B5 5D F3 7F E5 60 7E 1A  .1"O.....]...`..
+0090: 12 EF 67 38 FB 5E 38 96   23 C2 91 D8 3F E9 A5 41  ..g8.^8.#...?..A
+00A0: D0 27 6D F6 2E C2 CC E3   EF C8 1F 46 10 59 38 0B  .'m........F.Y8.
+00B0: 8F 82 E8 0A FF 0B 55 23   84 AB 4E 6A AB 41 5F 18  ......U#..Nj.A_.
+00C0: E5 26 D3 54 44 1E 3A 9D   95 40 CD 84 69 E0 C8 15  .&.TD.:..@..i...
+00D0: B2 18 D2 C8 A6 07 F0 E8   75 30 A7 46 13 8C 78 D6  ........u0.F..x.
+00E0: D5 D6 A3 C9 31 05 9A B2   4C 5A 21 5E 51 DB AF C6  ....1...LZ!^Q...
+00F0: D9 CC 70 66 8D E1 1F 6C   E7 BD FA A0 B0 41 A4 B2  ..pf...l.....A..
+0100: 57 6B 2D 55 E8 41 C0 F6   E0 32 1D 55 49 F4 33 20  Wk-U.A...2.UI.3 
+0110: 6C EF 07 5F 48 F4 DD EE   80 AB E3 9A 10 9C 7E 7D  l.._H...........
+0120: 22 75 48 87 CE 68 B7 A4   2B D7 96 54 DB 6C DC 26  "uH..h..+..T.l.&
+0130: B9 10 BB 98 39 56 4B 4C   E1 6C 4A BF E3 FC B6 63  ....9VKL.lJ....c
+0140: 4F ED F9 F4 CE 1B 23 2C   C8 1D DD 4A 4B 2E 85 94  O.....#,...JK...
+0150: 77 97 50 54 B2 F8 61 A0   F0 C0 07 FC 34 E0 49 F6  w.PT..a.....4.I.
+0160: 1C D1 6A 05 21 BF FD 59   EF 0E 30 21 05 20 85 48  ..j.!..Y..0!. .H
+0170: B0 24 13 AD BA E0 39 05   C9 1F 00 B6              .$....9.....
+
+Client Principal = platuser/10.2.177.208@OTOCYON.COM
+Server Principal = krbtgt/OTOCYON.COM@OTOCYON.COM
+Session Key = EncryptionKey: keyType=18 keyBytes (hex dump)=
+0000: 58 23 C4 18 84 CF 3D 7D   7D 8E 88 7F E9 21 10 B8  X#....=......!..
+0010: 1F B3 F8 31 9C 20 45 CC   E4 FF C6 53 93 0F AE 64  ...1. E....S...d
+
+
+Forwardable Ticket true
+Forwarded Ticket false
+Proxiable Ticket false
+Proxy Ticket false
+Postdated Ticket false
+Renewable Ticket true
+Initial Ticket true
+Auth Time = Fri Oct 21 13:22:45 CST 2016
+Start Time = Fri Oct 21 14:23:31 CST 2016
+End Time = Sat Oct 22 14:23:31 CST 2016
+Renew Till = Mon Oct 24 13:22:45 CST 2016
+Client Addresses  Null 
+16/10/21 19:36:44 DEBUG UserGroupInformation: Current time is 1477049804108
+16/10/21 19:36:44 DEBUG UserGroupInformation: Next refresh is 1477100131000
+16/10/21 19:36:44 INFO SecurityManager: Changing view acls to: platuser
+16/10/21 19:36:44 INFO SecurityManager: Changing modify acls to: platuser
+16/10/21 19:36:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(platuser); users with modify permissions: Set(platuser)
+16/10/21 19:36:44 DEBUG SSLOptions: No SSL protocol specified
+16/10/21 19:36:44 DEBUG SSLOptions: No SSL protocol specified
+16/10/21 19:36:44 DEBUG SSLOptions: No SSL protocol specified
+16/10/21 19:36:44 DEBUG SecurityManager: SSLConfiguration for file server: SSLOptions{enabled=false, keyStore=None, keyStorePassword=None, trustStore=None, trustStorePassword=None, protocol=None, enabledAlgorithms=Set()}
+16/10/21 19:36:44 DEBUG SecurityManager: SSLConfiguration for Akka: SSLOptions{enabled=false, keyStore=None, keyStorePassword=None, trustStore=None, trustStorePassword=None, protocol=None, enabledAlgorithms=Set()}
+16/10/21 19:36:44 DEBUG InternalLoggerFactory: Using SLF4J as the default logging framework
+16/10/21 19:36:44 DEBUG PlatformDependent0: java.nio.Buffer.address: available
+16/10/21 19:36:44 DEBUG PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+16/10/21 19:36:44 DEBUG PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+16/10/21 19:36:44 DEBUG PlatformDependent0: java.nio.Bits.unaligned: true
+16/10/21 19:36:44 DEBUG PlatformDependent: Java version: 7
+16/10/21 19:36:44 DEBUG PlatformDependent: -Dio.netty.noUnsafe: false
+16/10/21 19:36:44 DEBUG PlatformDependent: sun.misc.Unsafe: available
+16/10/21 19:36:44 DEBUG PlatformDependent: -Dio.netty.noJavassist: false
+16/10/21 19:36:44 DEBUG PlatformDependent: Javassist: unavailable
+16/10/21 19:36:44 DEBUG PlatformDependent: You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+16/10/21 19:36:44 DEBUG PlatformDependent: -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+16/10/21 19:36:44 DEBUG PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+16/10/21 19:36:44 DEBUG PlatformDependent: -Dio.netty.noPreferDirect: false
+16/10/21 19:36:44 DEBUG MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 4
+16/10/21 19:36:44 DEBUG NioEventLoop: -Dio.netty.noKeySetOptimization: false
+16/10/21 19:36:44 DEBUG NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 4
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 4
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+16/10/21 19:36:44 DEBUG PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+16/10/21 19:36:44 DEBUG TransportClientFactory: Creating new connection to /10.2.177.211:42327
+16/10/21 19:36:44 DEBUG ThreadLocalRandom: -Dio.netty.initialSeedUniquifier: 0xbbe28ed0ef3b408c (took 0 ms)
+16/10/21 19:36:44 DEBUG ByteBufUtil: -Dio.netty.allocator.type: unpooled
+16/10/21 19:36:44 DEBUG ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 65536
+16/10/21 19:36:44 DEBUG ResourceLeakDetector: -Dio.netty.leakDetectionLevel: simple
+16/10/21 19:36:44 DEBUG TransportClientFactory: Connection to /10.2.177.211:42327 successful, running bootstraps...
+16/10/21 19:36:44 DEBUG TransportClientFactory: Successfully created connection to /10.2.177.211:42327 after 106 ms (0 ms spent in bootstraps)
+16/10/21 19:36:44 DEBUG Recycler: -Dio.netty.recycler.maxCapacity.default: 262144
+16/10/21 19:36:44 INFO SecurityManager: Changing view acls to: platuser
+16/10/21 19:36:44 INFO SecurityManager: Changing modify acls to: platuser
+16/10/21 19:36:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(platuser); users with modify permissions: Set(platuser)
+16/10/21 19:36:44 DEBUG SSLOptions: No SSL protocol specified
+16/10/21 19:36:44 DEBUG SSLOptions: No SSL protocol specified
+16/10/21 19:36:44 DEBUG SSLOptions: No SSL protocol specified
+16/10/21 19:36:44 DEBUG SecurityManager: SSLConfiguration for file server: SSLOptions{enabled=false, keyStore=None, keyStorePassword=None, trustStore=None, trustStorePassword=None, protocol=None, enabledAlgorithms=Set()}
+16/10/21 19:36:44 DEBUG SecurityManager: SSLConfiguration for Akka: SSLOptions{enabled=false, keyStore=None, keyStorePassword=None, trustStore=None, trustStorePassword=None, protocol=None, enabledAlgorithms=Set()}
+16/10/21 19:36:44 DEBUG AkkaUtils: In createActorSystem, requireCookie is: off
+16/10/21 19:36:45 INFO Slf4jLogger: Slf4jLogger started
+16/10/21 19:36:45 INFO Remoting: Starting remoting
+16/10/21 19:36:45 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkExecutorActorSystem@10.2.177.211:60693]
+16/10/21 19:36:45 INFO Utils: Successfully started service 'sparkExecutorActorSystem' on port 60693.
+16/10/21 19:36:45 DEBUG SparkEnv: Using serializer: class org.apache.spark.serializer.JavaSerializer
+16/10/21 19:36:45 DEBUG TransportClientFactory: Creating new connection to /10.2.177.211:42327
+16/10/21 19:36:45 DEBUG TransportClientFactory: Connection to /10.2.177.211:42327 successful, running bootstraps...
+16/10/21 19:36:45 DEBUG TransportClientFactory: Successfully created connection to /10.2.177.211:42327 after 4 ms (0 ms spent in bootstraps)
+16/10/21 19:36:45 INFO DiskBlockManager: Created local directory at /data_b/spark/spark-a0999b80-b715-4020-bd9c-7d0add9eace7/executor-7b5d9a5f-e0f5-42c3-a973-fd9477e4ec26/blockmgr-74c59006-4c1f-40da-9de9-abcdf510399c
+16/10/21 19:36:45 INFO MemoryStore: MemoryStore started with capacity 511.5 MB
+16/10/21 19:36:45 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@10.2.177.211:42327
+16/10/21 19:36:45 INFO WorkerWatcher: Connecting to worker spark://Worker@10.2.177.211:7078
+16/10/21 19:36:45 DEBUG TransportClientFactory: Creating new connection to /10.2.177.211:7078
+16/10/21 19:36:45 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+16/10/21 19:36:45 INFO Executor: Starting executor ID 0 on host spark177211
+16/10/21 19:36:45 DEBUG TransportClientFactory: Connection to /10.2.177.211:7078 successful, running bootstraps...
+16/10/21 19:36:45 DEBUG TransportClientFactory: Successfully created connection to /10.2.177.211:7078 after 32 ms (0 ms spent in bootstraps)
+16/10/21 19:36:46 DEBUG NetUtil: Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%1)
+16/10/21 19:36:46 DEBUG NetUtil: /proc/sys/net/core/somaxconn: 128
+16/10/21 19:36:46 DEBUG TransportServer: Shuffle server started on port :56549
+16/10/21 19:36:46 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 56549.
+16/10/21 19:36:46 INFO NettyBlockTransferService: Server created on 56549
+16/10/21 19:36:46 INFO BlockManagerMaster: Trying to register BlockManager
+16/10/21 19:36:46 INFO BlockManagerMaster: Registered BlockManager
+16/10/21 19:36:46 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+16/10/21 19:36:46 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+16/10/21 19:36:46 INFO Executor: Fetching http://10.2.177.211:38642/files/spark.token with timestamp 1477049801922
+16/10/21 19:36:46 DEBUG Utils: fetchFile not using security
+16/10/21 19:36:46 INFO Utils: Fetching http://10.2.177.211:38642/files/spark.token to /data_b/spark/spark-a0999b80-b715-4020-bd9c-7d0add9eace7/executor-7b5d9a5f-e0f5-42c3-a973-fd9477e4ec26/spark-a8a61bcb-b288-443e-8748-12d9b960db44/fetchFileTemp9145320769754700664.tmp
+16/10/21 19:36:46 INFO Utils: Copying /data_b/spark/spark-a0999b80-b715-4020-bd9c-7d0add9eace7/executor-7b5d9a5f-e0f5-42c3-a973-fd9477e4ec26/spark-a8a61bcb-b288-443e-8748-12d9b960db44/8345535221477049801922_cache to /var/run/spark/work/app-20161021193642-0000/0/./spark.token
+16/10/21 19:36:46 INFO Executor: Fetching http://10.2.177.211:38642/jars/spark-examples-1.6.2-hadoop2.4.1.jar with timestamp 1477049802141
+16/10/21 19:36:46 DEBUG Utils: fetchFile not using security
+16/10/21 19:36:46 INFO Utils: Fetching http://10.2.177.211:38642/jars/spark-examples-1.6.2-hadoop2.4.1.jar to /data_b/spark/spark-a0999b80-b715-4020-bd9c-7d0add9eace7/executor-7b5d9a5f-e0f5-42c3-a973-fd9477e4ec26/spark-a8a61bcb-b288-443e-8748-12d9b960db44/fetchFileTemp320122818503077255.tmp
+16/10/21 19:36:46 INFO Utils: Copying /data_b/spark/spark-a0999b80-b715-4020-bd9c-7d0add9eace7/executor-7b5d9a5f-e0f5-42c3-a973-fd9477e4ec26/spark-a8a61bcb-b288-443e-8748-12d9b960db44/-9442158481477049802141_cache to /var/run/spark/work/app-20161021193642-0000/0/./spark-examples-1.6.2-hadoop2.4.1.jar
+16/10/21 19:36:47 INFO Executor: Adding file:/var/run/spark/work/app-20161021193642-0000/0/./spark-examples-1.6.2-hadoop2.4.1.jar to class loader
+16/10/21 19:36:47 DEBUG Executor: Task 0's epoch is 0
+16/10/21 19:36:47 DEBUG Executor: ==userName==platuser==
+16/10/21 19:36:47 DEBUG SparkHadoopUtil: ==userName==platuser==
+16/10/21 19:36:47 DEBUG SparkHadoopUtil: ==source==/var/run/spark/work/app-20161021193642-0000/0/./spark.token==
+16/10/21 19:36:47 DEBUG : address: spark177211/10.2.177.211 isLoopbackAddress: false, with host 10.2.177.211 spark177211
+16/10/21 19:36:47 DEBUG NativeLibraryLoader: -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+16/10/21 19:36:47 DEBUG NativeLibraryLoader: -Dio.netty.netty.workdir: /tmp (io.netty.tmpdir)
+16/10/21 19:36:47 DEBUG SparkHadoopUtil: ==iter==java.util.HashMap$ValueIterator@16c4df4b==
+16/10/21 19:36:47 DEBUG SparkHadoopUtil: ==iter==java.util.HashMap$ValueIterator@16c4df4b==
+16/10/21 19:36:47 DEBUG SparkHadoopUtil: ==ugi==platuser (auth:KERBEROS)==
+16/10/21 19:36:47 DEBUG UserGroupInformation: PrivilegedAction as:platuser (auth:KERBEROS) from:org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:251)
+16/10/21 19:36:47 DEBUG BlockManager: Getting local block broadcast_0
+16/10/21 19:36:47 DEBUG BlockManager: Block broadcast_0 not registered locally
+16/10/21 19:36:47 INFO TorrentBroadcast: Started reading broadcast variable 0
+16/10/21 19:36:47 DEBUG TorrentBroadcast: Reading piece broadcast_0_piece0 of broadcast_0
+16/10/21 19:36:47 DEBUG BlockManager: Getting local block broadcast_0_piece0 as bytes
+16/10/21 19:36:47 DEBUG BlockManager: Block broadcast_0_piece0 not registered locally
+16/10/21 19:36:47 DEBUG BlockManager: Getting remote block broadcast_0_piece0 as bytes
+16/10/21 19:36:47 DEBUG BlockManager: Getting remote block broadcast_0_piece0 from BlockManagerId(driver, 10.2.177.211, 53111)
+16/10/21 19:36:47 DEBUG TransportClientFactory: Creating new connection to /10.2.177.211:53111
+16/10/21 19:36:47 DEBUG TransportClientFactory: Connection to /10.2.177.211:53111 successful, running bootstraps...
+16/10/21 19:36:47 DEBUG TransportClientFactory: Successfully created connection to /10.2.177.211:53111 after 2 ms (0 ms spent in bootstraps)
+16/10/21 19:36:47 DEBUG TransportClient: Sending fetch chunk request 0 to /10.2.177.211:53111
+16/10/21 19:36:47 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 1218.0 B, free 1218.0 B)
+16/10/21 19:36:47 DEBUG BlockManagerMaster: Updated info of block broadcast_0_piece0
+16/10/21 19:36:47 DEBUG BlockManager: Told master about block broadcast_0_piece0
+16/10/21 19:36:47 DEBUG BlockManager: Put block broadcast_0_piece0 locally took  23 ms
+16/10/21 19:36:47 DEBUG BlockManager: Putting block broadcast_0_piece0 without replication took  23 ms
+16/10/21 19:36:47 INFO TorrentBroadcast: Reading broadcast variable 0 took 124 ms
+16/10/21 19:36:47 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 1904.0 B, free 3.0 KB)
+16/10/21 19:36:47 DEBUG BlockManager: Put block broadcast_0 locally took  73 ms
+16/10/21 19:36:47 DEBUG BlockManager: Putting block broadcast_0 without replication took  73 ms
+16/10/21 19:36:47 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1033 bytes result sent to driver
+16/10/21 19:36:48 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+16/10/21 19:36:48 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+16/10/21 19:36:48 DEBUG Executor: Task 1's epoch is 0
+16/10/21 19:36:48 DEBUG Executor: ==userName==platuser==
+16/10/21 19:36:48 DEBUG SparkHadoopUtil: ==userName==platuser==
+16/10/21 19:36:48 DEBUG SparkHadoopUtil: ==source==/var/run/spark/work/app-20161021193642-0000/0/./spark.token==
+16/10/21 19:36:48 DEBUG SparkHadoopUtil: ==iter==java.util.HashMap$ValueIterator@52c667e3==
+16/10/21 19:36:48 DEBUG SparkHadoopUtil: ==iter==java.util.HashMap$ValueIterator@52c667e3==
+16/10/21 19:36:48 DEBUG SparkHadoopUtil: ==ugi==platuser (auth:KERBEROS)==
+16/10/21 19:36:48 DEBUG UserGroupInformation: PrivilegedAction as:platuser (auth:KERBEROS) from:org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:251)
+16/10/21 19:36:48 DEBUG BlockManager: Getting local block broadcast_0
+16/10/21 19:36:48 DEBUG BlockManager: Level for block broadcast_0 is StorageLevel(true, true, false, true, 1)
+16/10/21 19:36:48 DEBUG BlockManager: Getting block broadcast_0 from memory
+16/10/21 19:36:48 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1033 bytes result sent to driver
+16/10/21 19:36:48 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+16/10/21 19:36:48 INFO MemoryStore: MemoryStore cleared
+16/10/21 19:36:48 INFO BlockManager: BlockManager stopped
+16/10/21 19:36:48 INFO RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+16/10/21 19:36:48 INFO RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+16/10/21 19:36:48 WARN CoarseGrainedExecutorBackend: An unknown (spark177211:42327) driver disconnected.
+16/10/21 19:36:48 ERROR CoarseGrainedExecutorBackend: Driver 10.2.177.211:42327 disassociated! Shutting d
