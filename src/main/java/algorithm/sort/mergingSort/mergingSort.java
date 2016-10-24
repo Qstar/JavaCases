@@ -32,7 +32,6 @@ public class mergingSort {
             //合并
             merge(data, left, center, right);
         }
-
     }
 
     public void merge(int[] data, int left, int center, int right){
@@ -48,7 +47,6 @@ public class mergingSort {
             } else {
                 tmpArr[third++] = data[mid++];
             }
-
         }
 
         //剩余部分依次放入中间数组
