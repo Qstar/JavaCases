@@ -1,14 +1,12 @@
-161021 195541 INFO CoarseGrainedExecutorBackend Registered signal handlers for [TERM, HUP, INT]
-161021 195542 DEBUG MutableMetricsFactory field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)], about=, type=DEFAULT, always=false, sampleName=Ops)
-161021 195542 DEBUG MutableMetricsFactory field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)], about=, type=DEFAULT, always=false, sampleName=Ops)
-161021 195542 DEBUG MutableMetricsFactory field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[GetGroups], about=, type=DEFAULT, always=false, sampleName=Ops)
-161021 195542 DEBUG MetricsSystemImpl UgiMetrics, User and group related metrics
-161021 195542 DEBUG Groups  Creating new Groups object
-161021 195542 DEBUG NativeCodeLoader Trying to load the custom-built native-hadoop library...
-161021 195542 DEBUG NativeCodeLoader Failed to load native-hadoop with error java.lang.UnsatisfiedLinkError no hadoop in java.library.path
-161021 195542 DEBUG NativeCodeLoader java.library.path=usrjavapackageslibamd64usrlib64lib64libusrlib
-161021 195542 WARN NativeCodeLoader Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-161021 195542 DEBUG JniBasedUnixGroupsMappingWithFallback Falling back to shell based
-161021 195542 DEBUG JniBasedUnixGroupsMappingWithFallback Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
-161021 195542 ERROR CoarseGrainedExecutorBackend RECEIVED SIGNAL 15 SIGTERM
-org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+16/10/25 11:48:17 INFO CoarseGrainedExecutorBackend: Registered signal handlers for [TERM, HUP, INT]
+16/10/25 11:48:17 DEBUG MutableMetricsFactory: field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)], about=, type=DEFAULT, always=false, sampleName=Ops)
+16/10/25 11:48:17 DEBUG MutableMetricsFactory: field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)], about=, type=DEFAULT, always=false, sampleName=Ops)
+16/10/25 11:48:17 DEBUG MutableMetricsFactory: field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[GetGroups], about=, type=DEFAULT, always=false, sampleName=Ops)
+16/10/25 11:48:17 DEBUG MetricsSystemImpl: UgiMetrics, User and group related metrics
+16/10/25 11:48:17 DEBUG Groups:  Creating new Groups object
+16/10/25 11:48:17 DEBUG NativeCodeLoader: Trying to load the custom-built native-hadoop library...
+16/10/25 11:48:17 DEBUG NativeCodeLoader: Loaded the native-hadoop library
+16/10/25 11:48:17 DEBUG JniBasedUnixGroupsMapping: Using JniBasedUnixGroupsMapping for Group resolution
+16/10/25 11:48:17 DEBUG JniBasedUnixGroupsMappingWithFallback: Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMapping
+16/10/25 11:48:17 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL 15: SIGTERM
+org.apache.hadoop.security.JniBasedUnixGroupsMapping
