@@ -4,8 +4,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegexMatches {
-    private static String pattern = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-    private static Pattern myPattern = Pattern.compile(pattern);
+    private static final String PATTERN = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+    private static final Pattern MY_PATTERN = Pattern.compile(PATTERN);
 
     public static void main(String args[]) {
 
@@ -22,7 +22,7 @@ public class RegexMatches {
     }
 
     private static boolean validateEMailID(String emailID) {
-        Matcher match = myPattern.matcher(emailID);
+        Matcher match = MY_PATTERN.matcher(emailID);
         return match.matches();
     }
 }
