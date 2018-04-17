@@ -1,4 +1,4 @@
-package designPattern.abstractFactory;
+package designPattern.abstractFactory.PersonFactory;
 
 interface PersonFactory {
     BoyInterface getBoy();

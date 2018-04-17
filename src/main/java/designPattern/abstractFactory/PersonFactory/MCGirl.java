@@ -1,4 +1,4 @@
-package designPattern.abstractFactory;
+package designPattern.abstractFactory.PersonFactory;
 
 class MCGirl implements GirlInterface {
     @Override
