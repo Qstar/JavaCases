@@ -1,4 +1,4 @@
-package designPattern.Composite;
+package designPattern.composite;
 
 public class ImageFile extends File {
 

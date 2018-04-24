@@ -1,4 +1,4 @@
-package designPattern.Composite;
+package designPattern.composite;
 
 public class VideoFile extends File{
 

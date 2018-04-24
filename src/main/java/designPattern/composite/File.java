@@ -1,4 +1,4 @@
-package designPattern.Composite;
+package designPattern.composite;
 
 public abstract class File {
     String name;
